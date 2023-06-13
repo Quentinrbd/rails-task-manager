@@ -1,9 +1,9 @@
 <div class="container">
   <h2> <%= @task.title %></h2>
   <p><%= @task.details %></p>
-  <button type="button" class="btn btn-primary"><%= link_to "Edit task", edit_path(@task) %></button>
-  <button type="button" class="btn btn-danger"><%= link_to "Delete",
+  <button type="button" class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i><%= link_to " Edit task", edit_path(@task) %></button>
+  <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i><%= link_to " Delete",
     task_path(@task),
     data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %> </button>
-  <button type="button" class="btn btn-primary"><%= link_to "Back to list", tasks_path %> </button>
+  <button type="button" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i><%= link_to " Back to list", tasks_path %> </button>
 </div>
