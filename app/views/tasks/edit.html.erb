@@ -1,7 +1,14 @@
+<div class="container">
 <%= form_with model: @task do |f| %>
+<div class="mb-3">
   <%= f.label :title %>
   <%= f.text_field :title %>
+</div>
+
+<div class="mb-3">
   <%= f.label :details %>
   <%= f.text_field :details %>
-  <%= f.submit %>
+</div>
+  <div class="myBtn"><%= f.submit %></div>
 <% end %>
+</div>
